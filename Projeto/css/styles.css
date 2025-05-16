@@ -1,0 +1,223 @@
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body {
+    background: linear-gradient(to bottom, #fff1eb, #ace0f9);
+}
+
+
+
+/* cabeçalho */
+
+h1, p { 
+    text-align: center;
+}
+
+h1 { 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #4a87e8;
+}
+
+/* galeria */
+
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.card-image { 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.card-1 .card-image { 
+    background-image: url(../img/bariloche.jpg);
+}
+
+.card-2 .card-image { 
+    background-image: url(../img/berlin.jpg);
+}
+
+.card-3 .card-image { 
+    background-image: url(../img/capetown.jpg);
+}
+
+.card-4 .card-image { 
+    background-image: url(../img/chile.jpg);
+}
+
+.card-5 .card-image { 
+    background-image: url(../img/cologne.jpg);
+}
+
+.card-6 .card-image { 
+    background-image: url(../img/netherlands.jpg);
+}
+
+.card-7 .card-image { 
+    background-image: url(../img/noruega.jpg);
+}
+
+.card-8 .card-image { 
+    background-image: url(../img/paris.jpg);
+}
+
+.card-9 .card-image { 
+    background-image: url(../img/puntacana.jpg);
+}
+
+.card-10 .card-image { 
+    background-image: url(../img/barcelona.jpg);
+}
+
+.card-11 .card-image { 
+    background-image: url(../img/cartagena.jpg);
+}
+
+.card-12 .card-image { 
+    background-image: url(../img/portugal.jpg);
+}
+
+.btn { 
+    display: block;
+    background-color: #4a87e8;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.btn:hover { 
+    background-color: #FFF;
+    color: #4A87E8;
+    border-color: #4A87E8;
+}
+
+.card-description { 
+    padding: 20px 10px;
+}
+
+
+.navbar {
+    background-color: #a7a6cb;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d6eaf8;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.footer {
+  background: #a7a6cb;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.formulario {
+  background-color: #f4f9ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+formulario h2 {
+  font-size: 26px;
+  color: #4a87e8;
+  margin-bottom: 10px;
+}
+
+.like-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #ccc;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.like-btn:hover {
+  color: #e74c3c; /* vermelho vibrante */
+  transform: scale(1.2);
+}
+
+.like-btn:focus,.like-btn:active {
+  color: #c0392b; /* vermelho escuro */
+  transform: scale(1.3);
+  outline: none;
+}
