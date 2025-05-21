@@ -1,7 +1,6 @@
 * { 
     padding: 0;
     margin: 0;
-    
 }
 
 body {
@@ -31,22 +30,23 @@ h1 {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .hero-content h1 {
+}
+
+.hero-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: bold;
-  }
-  
-  .hero-content p {
+    color: white;
+}
+
+.hero-content p {
     font-size: 20px;
     opacity: 0.9;
     animation-delay: 0.3s;
-  }
+    color: white;
+}
 
-  
- .container { 
+.container { 
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -66,25 +66,6 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex-direction: column;
     display: flex;
-}
-
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.card-info {
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 5px;
-  display: block;
-}
-
-.card-image { 
-    height: 270px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.5s ease;
 }
 
 .card-1 .card-image { 
@@ -150,6 +131,26 @@ h1 {
 .card-16 .card-image { 
     background-image: url(../img/arraialdocabo.jpg);
 }
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-info {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 5px;
+  display: block;
+}
+
+.card-image { 
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
 
 .btn { 
     display: block;
@@ -223,8 +224,7 @@ h1 {
 }
 
 .nav-links a:hover {
-    color: #d6eaf8;
-    color: #2c5fd6
+    color: #2c5fd6;
 }
 
 .footer {
@@ -248,8 +248,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-
-/* Estilizando o formulario */
+/* Estilizando o formulário */
 .contact-section {
   max-width: 600px;
   margin: 40px auto;
@@ -257,7 +256,13 @@ h1 {
   background: #f4f9ff;
   border-radius: 8px;
   border: 2px solid #2c5fd6;
-  box-shadow: 0 0 10px rgba(44, 95, 214, 0.4);
+  box-shadow: 0 0 8px rgba(47, 95, 214, 0.5);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section:hover {
+  border-color: #1a40b3;
+  box-shadow: 0 0 12px rgba(26, 64, 179, 0.8);
 }
 
 .contact-section h2 {
@@ -292,9 +297,9 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
   background: #1c5980;
 }
-
